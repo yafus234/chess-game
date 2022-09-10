@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body{
+background: royalblue;
+}
+h1{
+font-size: 4vh;
+color: white;
+}
+span{
+	font-size: 2vh;
+color: white;
+}
+i{
+color: white;
+}
+a{
+color: white;
+text-decoration: none;
+font-family: impact;
+margin: 3rem;
+font-size: 25px;
+}
+button{
+
+width: 30rem;
+height: 3rem;
+
+color: orange;
+background: transparent;
+border: 2px  solid white;
+}
+</style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="about.html">
+<i>Creators</i>
+</a>
+<a href="index.html">
+<i>HOME</i>
+</a>
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+
+<br></br>
+<center><h1>CHESS VIC</h1></center>
+<div id="board" class="board" ></div>
+<div class="info">
+    <label style="display:none;">Search depth:
+    <select id="search-depth">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+	</label>
+	
+	<br></br>
+	<br></br>
+<button type="text" onclick="myonclick()"><i><b>START / RESTART</i></button
+    <br></br>
+<br></br>
+    <span>Positions evaluated: <span id="position-count"></span></span>
+    <br>
+    <span>Time: <span id="time"></span></span>
+    <br>
+    <span>Positions/s: <span id="positions-per-s"></span> </span>
+    <br>
+    <br>
+    <div id="move-history" class="move-history">
+    </div>
+</div>
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="lib/chessboardjs/js/chess.js"></script>
+<script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+<script src="script.js"></script>
+<script>
+
+</script>
+</body>
+</html>
